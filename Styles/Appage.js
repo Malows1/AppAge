@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#ffffff', // background color
   },
   container: {
-    backgroundColor: '#EBEBEC',
+    
     width: 300,
     height: 200,
     justifyContent: 'center',
@@ -18,12 +18,7 @@ const styles = StyleSheet.create({
     marginTop: -100,
     elevation: 7,
   },
-  title: {
-    color: '#000',
-    fontSize: 24,
-    fontWeight: 'bold',
-    marginBottom: 20,
-  },
+
   ageText: {
     color: '#000',
     fontSize: 18,
@@ -31,7 +26,7 @@ const styles = StyleSheet.create({
   datetoday: {
     color: '#000',
     fontSize: 15,
-    padding: 10,
+    padding: 5,
   },
 });
 
