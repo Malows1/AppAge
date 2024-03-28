@@ -1,3 +1,5 @@
+// App.js
+
 import React, {useState, useEffect} from 'react';
 import AppUI from './Component/App_AgeUI';
 import calculateAppAge from './Component/calculateAppAge';
@@ -8,12 +10,11 @@ const App = () => {
   const [currentDate, setCurrentDate] = useState(null);
 
   useEffect(() => {
-    // example signup date
-    const userSignupDate = new Date('2019-08-12');
+    const userSignupDate = new Date('2024-03-12');
     setSignupDate(userSignupDate);
 
     const today = new Date();
-    setCurrentDate(today.toLocaleDateString()); // Format current date as a string
+    setCurrentDate(today.toLocaleDateString());
   }, []);
 
   useEffect(() => {

@@ -6,7 +6,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#ffffff', // background color
   },
   container: {
-    
     width: 300,
     height: 200,
     justifyContent: 'center',
@@ -16,22 +15,16 @@ const styles = StyleSheet.create({
     top: '40%',
     marginLeft: -150,
     marginTop: -100,
-    elevation: 7,
   },
   title: {
     color: '#000',
     fontSize: 24,
     fontWeight: 'bold',
-    marginBottom: 2,
+    marginBottom: 20,
   },
   ageText: {
     color: '#000',
-    fontSize: 18,
-  },
-  datetoday: {
-    color: '#000',
-    fontSize: 15,
-    padding: 5,
+    fontSize: 13,
   },
 });
 
