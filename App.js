@@ -10,7 +10,7 @@ const App = () => {
   const [currentDate, setCurrentDate] = useState(null);
 
   useEffect(() => {
-    const userSignupDate = new Date('2024-03-12');
+    const userSignupDate = new Date('2021-07-26');
     setSignupDate(userSignupDate);
 
     const today = new Date();

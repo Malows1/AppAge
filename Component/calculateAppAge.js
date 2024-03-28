@@ -14,25 +14,25 @@ const calculateAppAge = signupDate => {
 
   // If registered for less than a week, return this
   if (daysDifference < 7) {
-    return 'Less than a week';
+    return '少於一週';
   } 
   // If registered for less than 2 weeks, return this
   else if (daysDifference < 14) {
-    return '2 weeks';
+    return '2 週';
   } 
   // If registered for less than 1 month, return the number of weeks
   else if (daysDifference < 30) {
-    return `${Math.floor(daysDifference / 7)} weeks`;
+    return `${Math.floor(daysDifference / 7)} 週`;
   } 
   // If registered for less than 1 year, return the number of months
   else if (daysDifference < 365) {
     const months = Math.floor(daysDifference / 30);
     const remainingDays = daysDifference % 30;
     if (remainingDays === 0) {
-      return `${months} month${months !== 1 ? 's' : ''}`;
+      return `${months} 個月${months !== 1 ? '' : ''}`;
     } else {
-      return `${months} month${
-        months !== 1 ? 's' : ''
+      return `${months} 個月${
+        months !== 1 ? '' : ''
       } `;
     }
   } 
@@ -41,11 +41,11 @@ const calculateAppAge = signupDate => {
     const years = Math.floor(daysDifference / 365);
     const remainingDays = daysDifference % 365;
     if (remainingDays === 0) {
-      return `${years} Year${years !== 1 ? 's' : ''}`;
+      return `${years} 年${years !== 1 ? '' : ''}`;
     } else {
       const months = Math.floor(remainingDays / 30);
-      return `${years} Year${years !== 1 ? 's' : ''} and ${months} Month${
-        months !== 1 ? 's' : ''
+      return `${years} 年${years !== 1 ? '' : ''} 和 ${months} 個月${
+        months !== 1 ? '' : ''
       }`;
     }
   }
