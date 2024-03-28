@@ -18,7 +18,12 @@ const styles = StyleSheet.create({
     marginTop: -100,
     elevation: 7,
   },
-
+  title: {
+    color: '#000',
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 2,
+  },
   ageText: {
     color: '#000',
     fontSize: 18,

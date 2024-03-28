@@ -6,7 +6,7 @@ const AppUI = ({appAge, currentDate}) => {
   return (
     <SafeAreaView style={styles.background}>
       <View style={styles.container}>
-    
+        <Text style={styles.title}>Joined</Text>
         {appAge && (
           <Text style={styles.ageText}>
             {appAge.years} year{appAge.years !== 1 ? 's' : ''} and{' '}
